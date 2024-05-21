@@ -7,6 +7,21 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <section class="fContainer">
+        <nav class="wrapper">
+            <div>
+                <div class="firsttitle"></div>
+                <div class="lasttitle"></div>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="index.html">Alas Segitiga</a></li>
+                    <li><a href="">Keliling Segitiga</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+    
     <header>
         <h1>Welcome to my calculator</h1>
         <section>
@@ -48,22 +63,26 @@
                 <form>
                     <section>
                         <div>
-                            <label>Alas:</label><input />
+                            <label>Alas:</label>
+                            <input id="alas" placeholder="Alas Segitga" type="number">
                         </div>
                         <div>
-                            <label>Tinggi:</label><input />
+                            <label>Tinggi:</label>
+                            <input  id="tinggi" placeholder="Tinggi Segitiga" type="number">
                         </div>
                     </section>
                 
                     <p>Diketahui: lorem gipsum...</p>
 
-                    <button type="button">Hitung</button>
-                    <button type="button" id="reset-button">Reset</button>
+                    <button type="button" onclick="luasSegitiga()">Hitung</button>
+                    <button type="button" onclick="resetLuas()">Reset</button>
+                    <h4 id="hasilLuas">HASIL LUAS :</h4>
+                    
                 </form>
             </section>
         </section>
     </section>
         
-    
+<script src="js/script.js"></script>
 </body>
 </html>
