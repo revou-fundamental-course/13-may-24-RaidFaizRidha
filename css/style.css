@@ -1,7 +1,16 @@
 /* ini css */
 
+header {
+    text-align: center;
+    font-family: monospace;
+}
+
+#pembuka {
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .section-content {
-    background-color: rgb(72, 75, 226);
+    background-color: aquamarine;
     color: white;
     padding-top: 8px;
     padding-bottom: 8px;
@@ -18,7 +27,16 @@
     width: 100%;
     background-color: white;
     border: 0px;
-    color: blue;
+    color: aquamarine;
+}
+
+#switch-luas {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 100%;
+    background-color: white;
+    border: 0px;
+    color: aquamarine;
 }
 
 .formula-img {
@@ -26,26 +44,38 @@
 }
 
 img {
-    height: 100px;
+    height: 200px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
 }
 
 input {
-    width: 100%;
+    width: 50%;
     background: azure;
-    border: 1px solid blueviolet;
-    border-radius: 4px;
+    border: 1px solid aquamarine;
+    border-radius: 10px;
     padding: 4px;
     font-family: math;
+    margin-bottom: 5px;
 }
 
-form>button {
+.wrapper {
+    display: flex;
+    justify-content: end;
+    margin-bottom: 25px;
+}
+
+.kalkulasi {
     padding: 18px;
     border-radius: 32%;
     border: 1px solid azure;
     background-color: aliceblue;
 }
 
-#reset-button {
+#reset {
     background-color: aquamarine;
     color: white;
 }
