@@ -1,5 +1,19 @@
 /* ini css */
 
+body {
+    background-color: bisque;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 600px;
+}
+
 header {
     text-align: center;
     font-family: monospace;
