@@ -7,54 +7,51 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <section class="fContainer">
-        <nav class="wrapper">
-            <div>
-                <div class="firsttitle"></div>
-                <div class="lasttitle"></div>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="index.html">Alas Segitiga</a></li>
-                    <li><a href="">Keliling Segitiga</a></li>
-                </ul>
-            </div>
-        </nav>
-    </section>
-    
     <header>
-        <h1>Welcome to my calculator</h1>
+        <h1>Mathematical solutions for triangles</h1>
         <section>
-            <p>
-                Hai sobat, welcome to my calculator
+            <p id="pembuka">
+                Hai sobat, welcome to my page!!
+                <br>
+                web ini berfungsi untuk mencari luas dan keliling dari sebuah segitiga
+                <br>
+                semoga bermanfaat :)
             </p>
         </section>
     </header>
     <!-- General Title -->
-    <section>
+    <section id="luas">
         <div class="section-content">
             <h3>Segitiga</h3>
         </div>
 
-        <button type="button" id="switch-keliling"><u>Switch ke Keliling Segitiga</u></button>
+        <button type="button" id="switch-keliling">
+            <u>
+                <a href="#keliling">Switch Ke Keliling</a>
+            </u>
+        </button>
 
         <section>
-            <!-- Top Content -->
+            <!-- Top Content Luas-->
             <section>
                 <div class="section-content">
                     <h2>Luas Segitiga</h2>
                 </div>
 
                 <div class="formula-img">
-                    <img src="assets/rumus-luas-segitiga-sama-sisi.png" alt="Segitiga">
+                    <img src="assets/segitiga.png" alt="Segitiga">
                 </div>
 
-                <p>lorem ipsum</p>
+                <p>
+                    Rumus luas segitiga:
+                    <br>
+                    L = 1/2 x a x t
+                </p>
             </section>
 
             <hr />
 
-            <!-- Bottom Content -->
+            <!-- Bottom Content Luas-->
             <section>
                 <header>
                     <h2>Hitung Luas Segitiga</h2>
@@ -64,20 +61,83 @@
                     <section>
                         <div>
                             <label>Alas:</label>
-                            <input id="alas" placeholder="Alas Segitga" type="number">
+                            <input id="alas" placeholder="Masukkan nilai" type="number">
                         </div>
                         <div>
                             <label>Tinggi:</label>
-                            <input  id="tinggi" placeholder="Tinggi Segitiga" type="number">
+                            <input  id="tinggi" placeholder="Masukkan nilai" type="number">
                         </div>
                     </section>
-                
-                    <p>Diketahui: lorem gipsum...</p>
 
-                    <button type="button" onclick="luasSegitiga()">Hitung</button>
-                    <button type="button" onclick="resetLuas()">Reset</button>
-                    <h4 id="hasilLuas">HASIL LUAS :</h4>
+                    <h4 id="hasilLuas">Hasil luas segitiga :</h4>
+
+                    <div class="wrapper">          
+                        <button class="kalkulasi" type="button" onclick="luasSegitiga()">Hitung</button>
+                        <button class="kalkulasi" id="reset" type="button" onclick="resetLuas()">Reset</button>
+                    </div>                                    
                     
+                </form>
+            </section>
+        </section>
+
+       
+        
+        <section id="keliling">
+
+            <button type="button" id="switch-luas">
+                <u>
+                    <a href="#luas">Switch Ke Luas</a>
+                </u>
+            </button>
+
+            <!-- Top Content Keliling-->
+            <section>
+                <div class="section-content">
+                    <h2>Keliling Segitiga</h2>
+                </div>
+
+                <div class="formula-img">
+                    <img src="assets/segitiga.png" alt="Segitiga">
+                </div>
+
+                <p>
+                    Rumus keliling segitiga:
+                    <br>
+                    K = a + b + c
+                </p>
+            </section>
+
+            <hr />
+
+            <!-- Bottom Content Keliling-->
+            <section >
+                <header>
+                    <h2>Hitung Luas Segitiga</h2>
+                </header>
+
+                <form>
+                    <section>
+                        <div>
+                            <label>Sisi 1:</label>
+                            <input id="sisi1" placeholder="Masukkan nilai" type="number">
+                        </div>
+                        <div>
+                            <label>Sisi 2:</label>
+                            <input id="sisi2" placeholder="Masukkan nilai" type="number">
+                        </div>
+                        <div>
+                            <label>Sisi 3:</label>
+                            <input id="sisi3" placeholder="Masukkan nilai" type="number">
+                        </div>
+                    </section>
+
+                    <h4 id="hasilKeliling">Hasil keliling segitiga :</h4>
+                    
+                    <div class="wrapper">                      
+                        <button class="kalkulasi" type="button" onclick="kelilingSegitiga()">Hitung</button>
+                        <button class="kalkulasi" id="reset" type="button" onclick="resetKeliling()">Reset</button>
+                    </div>
+                   
                 </form>
             </section>
         </section>
